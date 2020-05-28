@@ -31,6 +31,15 @@ const Header = () => {
             </Link>
           </li>
           <li>
+            <Link
+              to="/blog"
+              className={headerStyle.navItem}
+              activeClassName={headerStyle.activeNavItem}
+            >
+              blog
+            </Link>
+          </li>
+          <li>
             <a
               href="http://https://robertocastelli.netlify.app/"
               target="_blank"
@@ -40,15 +49,6 @@ const Header = () => {
             >
               official site
             </a>
-          </li>
-          <li>
-            <Link
-              to="/blog"
-              className={headerStyle.navItem}
-              activeClassName={headerStyle.activeNavItem}
-            >
-              blog
-            </Link>
           </li>
         </ul>
       </nav>
