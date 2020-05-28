@@ -7,7 +7,7 @@ data: 05/08/2019
 
 _"Impostor syndrome is a psychological pattern in which an individual doubts their accomplishments despite external evidence of their competence"_
 
-![dune](./dune.jpg)
+![dune](../001/dune.jpg)
 
 Hi I'm an impostor, my name is Roberto and I'm a 40 y.o. Project Manager. Since I was a youngster I had a passion for programming languages.
 
