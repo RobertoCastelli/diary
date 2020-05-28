@@ -12,6 +12,7 @@ const Blog = () => {
             frontmatter {
               data
               title
+              intro
             }
             fields {
               slug
@@ -32,6 +33,7 @@ const Blog = () => {
             <li key={edge.node.id} className={blogStyle.post}>
               <Link to={`/blog/${edge.node.fields.slug}`}>
                 <h1>{edge.node.frontmatter.title}</h1>
+                <p>{edge.node.frontmatter.intro}</p>
                 <p>{edge.node.frontmatter.data}</p>
                 <p>{edge.node.timeToRead} min read</p>
               </Link>

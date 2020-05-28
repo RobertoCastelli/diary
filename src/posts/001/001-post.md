@@ -1,11 +1,10 @@
 ---
 title: "Diary of an impostor"
 data: 05/08/2019
+intro: "Impostor syndrome is a psychological pattern in which an individual doubts their accomplishments despite external evidence of their competence"
 ---
 
 ## 001 - Diary of an impostor
-
-_"Impostor syndrome is a psychological pattern in which an individual doubts their accomplishments despite external evidence of their competence"_
 
 ![dune](../001/dune.jpg)
 

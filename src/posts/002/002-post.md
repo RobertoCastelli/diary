@@ -1,11 +1,10 @@
 ---
 title: "Plan of attack"
 data: 06/08/2019
+intro: "Plans are worthless. Planning is essential. ~ Dwight D. Eisenhower"
 ---
 
 ## 002 - Plan of attack
-
-_"Plans are worthless. Planning is essential." ~ Dwight D. Eisenhower_
 
 TO-DO LIST - what I have to master to achieve my goal
 
