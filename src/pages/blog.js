@@ -33,17 +33,15 @@ const Blog = () => {
           return (
             <li key={edge.node.id} className={blogStyle.post}>
               <Link to={`/blog/${edge.node.fields.slug}`}>
+                <p>{edge.node.frontmatter.data}</p>
                 <p>{edge.node.timeToRead} min read</p>
                 <h2>{edge.node.frontmatter.title}</h2>
-                <h5>{edge.node.frontmatter.intro}</h5>
-                <div className={blogStyle.tags}>
-                  <p>{edge.node.frontmatter.data}</p>
-                  <ul>
-                    {edge.node.frontmatter.tags.map(tag => (
-                      <li>{tag}</li>
-                    ))}
-                  </ul>
-                </div>
+                <p>{edge.node.frontmatter.intro}</p>
+                <ul className={blogStyle.tagList}>
+                  {edge.node.frontmatter.tags.map(tag => (
+                    <li className={blogStyle.tagItem}>{tag}</li>
+                  ))}
+                </ul>
               </Link>
             </li>
           )

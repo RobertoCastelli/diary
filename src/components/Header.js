@@ -17,7 +17,7 @@ const Header = () => {
     <div className={headerStyle.container}>
       <h1>{data.site.siteMetadata.title}</h1>
       <p>
-        <i>reinvent yourself at 42 years old</i>
+        <i>reinvent yourself as a Web Developer at 42 years old</i>
       </p>
       <nav>
         <ul className={headerStyle.navList}>
@@ -38,17 +38,6 @@ const Header = () => {
             >
               blog
             </Link>
-          </li>
-          <li>
-            <a
-              href="http://https://robertocastelli.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={headerStyle.navItem}
-              activeClassName={headerStyle.activeNavItem}
-            >
-              official site
-            </a>
           </li>
         </ul>
       </nav>

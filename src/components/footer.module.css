@@ -2,3 +2,14 @@
   flex-shrink: 0;
   text-align: center;
 }
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footer-item {
+  margin-right: 2rem;
+  transform: scale(1.5);
+}
