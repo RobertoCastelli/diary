@@ -2,9 +2,14 @@
 title: "Plan of attack"
 data: 06/08/2019
 intro: "Plans are worthless. Planning is essential. ~ Dwight D. Eisenhower"
+tags:
+  - general-topic
+  - uno
 ---
 
 ## 002 - Plan of attack
+
+![dune](../002/dune.jpg)
 
 TO-DO LIST - what I have to master to achieve my goal
 

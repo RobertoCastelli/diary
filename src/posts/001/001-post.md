@@ -1,7 +1,9 @@
 ---
 title: "Diary of an impostor"
-data: 05/08/2019
+data: 05 August, 2019
 intro: "Impostor syndrome is a psychological pattern in which an individual doubts their accomplishments despite external evidence of their competence"
+tags:
+  - general-topic
 ---
 
 ## 001 - Diary of an impostor
@@ -16,8 +18,8 @@ I began putting every possible effort to achieve this goal (and still continuing
 
 This blog is a story in continuous evolution to keep track of my progress, paths, errors, achievements in the hopes of helping other people to share this adventure.
 
-Special thanks to Jaga Santagostino, my mentor.
+Special thanks to [Jaga Santagostino](https://jagasantagostino.com/), my mentor.
 
 Stay tuned!
 
-> Roberto
+**_Roberto_**

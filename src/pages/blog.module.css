@@ -18,7 +18,22 @@
   background: #e4e4e4;
 }
 
-.post p {
+.post p,
+.tags ul {
   font-size: 0.8rem;
   font-style: italic;
+}
+
+.tags ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.tags ul li {
+  padding: 0.4rem;
+  margin-right: 0.5rem;
+  background-color: #5f9ea0;
+  border-radius: 10px;
+  color: black;
 }
