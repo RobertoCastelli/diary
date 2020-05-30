@@ -3,6 +3,7 @@
  * add like on post
  * add tags page with filter
  * gatsby helmet
+ * number of posts
  */
 
 import React from "react"
@@ -10,6 +11,7 @@ import Layout from "../components/Layout"
 import indexStyle from "./index.module.css"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import Head from "../components/Head"
 
 export default function Home() {
   const data = useStaticQuery(graphql`
@@ -28,6 +30,7 @@ export default function Home() {
   return (
     <>
       <Layout>
+        <Head title="Home" />
         <Img fluid={data.file.childImageSharp.fluid} />
         <div className={indexStyle.indexContent}>
           <p>
@@ -46,7 +49,10 @@ export default function Home() {
           <p>
             This blog is a story in continuous evolution to keep track of my
             progress, paths, errors, achievements in the hopes of helping other
-            people to share this adventure. Special thanks to{" "}
+            people to share this adventure.
+          </p>
+          <p>
+            Special thanks to{" "}
             <a
               href="https://jagasantagostino.com/"
               target="_blank"
