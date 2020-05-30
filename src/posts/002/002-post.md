@@ -1,5 +1,5 @@
 ---
-title: "Plan of attack"
+title: "002 - Plan of attack"
 data: 06 August, 2019
 intro: '"Plans are worthless. Planning is essential" ~ Dwight D. Eisenhower'
 tags:

@@ -12,4 +12,13 @@
 .footer-item {
   margin-right: 2rem;
   transform: scale(1.5);
+  cursor: pointer;
+}
+
+.footer-item:hover {
+  color: cadetblue;
+}
+
+.footer-item:active {
+  transform: scale(2);
 }

@@ -1,3 +1,9 @@
+/**
+ * TODO:
+ * add like on post
+ * add tags page with filter
+ */
+
 import React from "react"
 import Layout from "../components/Layout"
 import "./index.css"
