@@ -1,10 +1,9 @@
 ---
 title: "002 - Plan of attack"
 data: 06 August, 2019
-intro: '"Plans are worthless. Planning is essential" ~ Dwight D. Eisenhower'
+intro: "You don't have to be great to start, but You have to start to be great ~ Zig Ziglar"
 tags:
   - general-topic
-  - uno
 ---
 
 ## 002 - Plan of attack

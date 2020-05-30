@@ -1,38 +1,50 @@
 ---
-title: "003 - Plan of attack"
+title: "003 - Useful resources"
 data: 07 August, 2019
 intro: '"Plans are worthless. Planning is essential" ~ Dwight D. Eisenhower'
 tags:
   - general-topic
-  - uno
 ---
 
-## 003 - Plan of attack
+## 003 - Useful resources
 
-TO-DO LIST - what I have to master to achieve my goal
+![links](../../images/links.jpg)
 
-- Javascript (HTML/CSS)
-- React & Vue
-- NodeJS (Express)
-- Github
-- Boostrap
-- VIM
-- Markdown
-- Google analitics
-- Machine learning
-- Python (Django, Flask, etc)
+This is a growing compendium of resources that helped me going on.
+I'll keep adding them whatever I find rilevant in this journey.
 
-TO-BE LIST - what I have to do to become what I want
+**TOOLS**
+- VS Codium - IDE freely-licensed binary distribution of Microsoft’s editor VSCode
+- Github - a code hosting platform for version control and collaboration
+- Markdown - a lightweight markup language to add formatting elements to plaintext text documents
+- Netlify - build fast, modern websites: continuous deployment, serverless functions
+- Placeholder - generates custom placeholder images on the fly
+- Font Awsome - the web's most popular icon set and toolkit
+- Boostrap - an open source toolkit for developing with HTML, CSS, and JS
+- Firebase - is your server, your API and your datastore, all written so that you can modify it to suit most needs
+- Keycode - JS event keycode
+- CanIUse - up-to-date browser support tables for support of front-end web
+- Div Checker - utility will attempt to guess which tags do not have a matching pair
+- VIM - learn VIM while playing a game
+- Accuweather - API resource for weather info
+- Localstorage w/ VUE - add localstorage in your Vue app in 2 line of code
+- FreeCodeCamp - a free intercactive learning site, that gives certificates
 
-- Buy a domain
-- Make a Site
-- Make a Blog - write a post once a week
-- Find a mentor
-- Github - upload projects periodically to build a substantial portfolio
-- Linkedin - update regularly
-- Realize a logo
-- Learn, learn, learn and learn.
+**INSPIRING**
+- Jaga Santagostino  - a series of discussion that overlook the world of programming and more 
+- Gabriele Lana - the professional developer
+- Shawn Wang - how I left a $350K/year finance job to learn to code
+- Tania Rascia - a really neat blogger and developer
 
-Stay tuned!
+**LEARNING**
+- Modern Javascript ~ Shaun Pelling (Udemy)
+- Build Web Apps with VUE ~ Shaun Pelling (Udemy)
+- NodeJS the complete guide ~ Maximilian Schuarzmuller (Udemy)
 
-> Roberto
+**BOOKS**
+- Clean Code - a Handbook of Agile Software Craftsmanship ~ Robert C. Martin
+- Eloquent JavaScript - a Modern Introduction to Programming ~ Marijn Haverbeke
+
+Stay Tuned!
+
+**_Roberto_**

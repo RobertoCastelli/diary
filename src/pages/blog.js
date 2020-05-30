@@ -23,6 +23,9 @@ const Blog = () => {
             id
           }
         }
+        pageInfo {
+          totalCount
+        }
       }
     }
   `)
@@ -30,6 +33,7 @@ const Blog = () => {
   return (
     <Layout>
       <Head title="Blog" />
+      <p>total posts: n°{data.allMarkdownRemark.pageInfo.totalCount}</p>
       <ol className={blogStyle.posts}>
         {data.allMarkdownRemark.edges.map(edge => {
           return (
