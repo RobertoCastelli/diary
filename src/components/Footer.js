@@ -19,13 +19,31 @@ const Footer = () => {
     <div className={footerStyle.footer}>
       <ul className={footerStyle.footerList}>
         <li className={footerStyle.footerItem}>
-          <FaGlobe />
+          <a
+            href="https://robertocastelli.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGlobe />
+          </a>
         </li>
         <li className={footerStyle.footerItem}>
-          <GrLinkedinOption />
+          <a
+            href="https://www.linkedin.com/in/roberto-castelli-teal/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GrLinkedinOption />
+          </a>
         </li>
         <li className={footerStyle.footerItem}>
-          <FaGithub />
+          <a
+            href="https://github.com/RobertoCastelli"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
         </li>
       </ul>
       <p>copyright &copy; 2020 {data.site.siteMetadata.author}</p>

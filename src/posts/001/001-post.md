@@ -8,7 +8,7 @@ tags:
 
 ## 001 - Diary of an impostor
 
-![dune](../001/dune.jpg)
+![dune](../../images/impostor.png)
 
 Hi I'm an impostor, my name is Roberto and I'm a 40 y.o. Project Manager. Since I was a youngster I had a passion for programming languages.
 

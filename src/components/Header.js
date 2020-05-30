@@ -17,7 +17,11 @@ const Header = () => {
     <div className={headerStyle.container}>
       <h1>{data.site.siteMetadata.title}</h1>
       <p>
-        <i>reinvent yourself as a Web Developer at 42 years old</i>
+        <i>
+          reinvent yourself as a{" "}
+          <span className={headerStyle.headerSpan}>Web Developer</span> at 42
+          years old
+        </i>
       </p>
       <nav>
         <ul className={headerStyle.navList}>

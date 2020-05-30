@@ -2,18 +2,19 @@
  * TODO:
  * add like on post
  * add tags page with filter
+ * gatsby helmet
  */
 
 import React from "react"
 import Layout from "../components/Layout"
-import "./index.css"
+import indexStyle from "./index.module.css"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 export default function Home() {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "dune.jpg" }) {
+      file(relativePath: { eq: "impostor.png" }) {
         id
         childImageSharp {
           fluid {
@@ -28,10 +29,10 @@ export default function Home() {
     <>
       <Layout>
         <Img fluid={data.file.childImageSharp.fluid} />
-        <div className="home-content">
+        <div className={indexStyle.indexContent}>
           <p>
-            Hi I'm an impostor, my name is Roberto and I'm a 42 y.o. Project
-            Manager.
+            Hi, my name is Roberto and I'm a 42 y.o. Project Manager, wannabe
+            Web Developer.
           </p>
           <p>
             Since I was a youngster I had a passion for programming languages. I
@@ -45,8 +46,15 @@ export default function Home() {
           <p>
             This blog is a story in continuous evolution to keep track of my
             progress, paths, errors, achievements in the hopes of helping other
-            people to share this adventure. Special thanks to Jaga Santagostino,
-            my mentor.
+            people to share this adventure. Special thanks to{" "}
+            <a
+              href="https://jagasantagostino.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className={indexStyle.indexSpan}>Jaga Santagostino</span>
+            </a>
+            , my mentor.
           </p>
         </div>
       </Layout>

@@ -10,6 +10,12 @@ body {
   padding: 0;
 }
 
-.home-content {
+.index-content {
   text-align: justify;
+  margin-top: 1.5rem;
+}
+
+.index-span {
+  color: cadetblue;
+  text-decoration: underline;
 }

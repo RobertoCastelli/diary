@@ -1,15 +1,13 @@
 ---
-title: "002 - Plan of attack"
-data: 06 August, 2019
+title: "003 - Plan of attack"
+data: 07 August, 2019
 intro: '"Plans are worthless. Planning is essential" ~ Dwight D. Eisenhower'
 tags:
   - general-topic
   - uno
 ---
 
-## 002 - Plan of attack
-
-![plan](../../images/plan.jpg)
+## 003 - Plan of attack
 
 TO-DO LIST - what I have to master to achieve my goal
 
@@ -37,4 +35,4 @@ TO-BE LIST - what I have to do to become what I want
 
 Stay tuned!
 
-**_Roberto_**
+> Roberto
