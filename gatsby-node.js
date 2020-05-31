@@ -21,6 +21,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const blogTemplate = path.resolve("src/templates/blog.js")
+  const tagTemplate = path.resolve("src/templates/tag.js")
   const res = await graphql(`
     query {
       allMarkdownRemark {
@@ -28,6 +29,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
           node {
             fields {
               slug
+            }
+            frontmatter {
+              tags
             }
           }
         }
@@ -44,5 +48,13 @@ module.exports.createPages = async ({ graphql, actions }) => {
         slug: edge.node.fields.slug,
       },
     })
+  })
+
+  createPage({
+    component: tagTemplate,
+    path: `/tag`,
+    context: {
+      tag: "javascript",
+    },
   })
 }

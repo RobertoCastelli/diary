@@ -46,7 +46,7 @@
 }
 
 .tag-item:hover .tag-counter {
-color: black;
+  color: black;
 }
 
 .tag-content {

@@ -38,16 +38,16 @@ const Blog = () => {
       <Head title="Blog" />
       <p>total posts: {data.allMarkdownRemark.pageInfo.totalCount}</p>
       <div className={blogStyle.tagContent}>
-        {data.allMarkdownRemark.group.map(field => {
-          return (
-            <ul className={blogStyle.tagList}>
-              <li className={blogStyle.tagItem}>
+        <ul className={blogStyle.tagList}>
+          {data.allMarkdownRemark.group.map(field => {
+            return (
+              <li key={field.fieldValue} className={blogStyle.tagItem}>
                 {field.fieldValue}:{" "}
                 <span className={blogStyle.tagCounter}>{field.totalCount}</span>
               </li>
-            </ul>
-          )
-        })}
+            )
+          })}
+        </ul>
       </div>
       <ol className={blogStyle.posts}>
         {data.allMarkdownRemark.edges.map(edge => {
@@ -60,7 +60,9 @@ const Blog = () => {
                 <p>{edge.node.frontmatter.intro}</p>
                 <ul className={blogStyle.tagList}>
                   {edge.node.frontmatter.tags.map(tag => (
-                    <li className={blogStyle.tagItem}>{tag}</li>
+                    <li key={tag} className={blogStyle.tagItem}>
+                      {tag}
+                    </li>
                   ))}
                 </ul>
               </Link>
