@@ -26,14 +26,28 @@ const Blog = () => {
         pageInfo {
           totalCount
         }
+        group(field: frontmatter___tags) {
+          fieldValue
+          totalCount
+        }
       }
     }
   `)
-
   return (
     <Layout>
       <Head title="Blog" />
-      <p>total posts: n°{data.allMarkdownRemark.pageInfo.totalCount}</p>
+      <p>total posts: {data.allMarkdownRemark.pageInfo.totalCount}</p>
+      <div className={blogStyle.tagContent}>
+        {data.allMarkdownRemark.group.map(field => {
+          return (
+            <ul className={blogStyle.tagList}>
+              <li className={blogStyle.tagItem}>
+                {field.fieldValue}: {field.totalCount}
+              </li>
+            </ul>
+          )
+        })}
+      </div>
       <ol className={blogStyle.posts}>
         {data.allMarkdownRemark.edges.map(edge => {
           return (

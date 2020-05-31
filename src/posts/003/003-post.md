@@ -2,8 +2,7 @@
 title: "003 - Useful resources"
 data: 07 August, 2019
 intro: '"Plans are worthless. Planning is essential" ~ Dwight D. Eisenhower'
-tags:
-  - general-topic
+tags: ["generic", "tools", "javascript"]
 ---
 
 ## 003 - Useful resources

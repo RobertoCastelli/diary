@@ -12,6 +12,7 @@ import indexStyle from "./index.module.css"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Head from "../components/Head"
+import { Link } from "gatsby"
 
 export default function Home() {
   const data = useStaticQuery(graphql`
@@ -31,10 +32,12 @@ export default function Home() {
     <>
       <Layout>
         <Head title="Home" />
-        <Img
-          className={indexStyle.indexImage}
-          fluid={data.file.childImageSharp.fluid}
-        />
+        <Link to="/blog">
+          <Img
+            className={indexStyle.indexImage}
+            fluid={data.file.childImageSharp.fluid}
+          />
+        </Link>
         <div className={indexStyle.indexContent}>
           <p>
             Hi, my name is Roberto and I'm a 42 y.o. Project Manager, wannabe
