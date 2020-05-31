@@ -42,7 +42,8 @@ const Blog = () => {
           return (
             <ul className={blogStyle.tagList}>
               <li className={blogStyle.tagItem}>
-                {field.fieldValue}: {field.totalCount}
+                {field.fieldValue}:{" "}
+                <span className={blogStyle.tagCounter}>{field.totalCount}</span>
               </li>
             </ul>
           )

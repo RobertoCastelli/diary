@@ -45,7 +45,17 @@
   cursor: pointer;
 }
 
+.tag-item:hover .tag-counter {
+color: black;
+}
+
 .tag-content {
   display: flex;
   flex-wrap: wrap;
+}
+
+.tag-counter {
+  background: white;
+  border-radius: 50%;
+  padding: 0.1rem 0.3rem;
 }
