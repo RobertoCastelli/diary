@@ -7,7 +7,10 @@ import Head from "../components/Head"
 const Blog = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(sort: { order: DESC, fields: frontmatter___data }) {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: frontmatter___data }
+        limit: 2
+      ) {
         edges {
           node {
             frontmatter {

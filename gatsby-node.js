@@ -19,9 +19,13 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const blogTemplate = path.resolve("src/templates/blog.js")
   const tagTemplate = path.resolve("src/templates/tag.js")
+  const blogListTemplate = path.resolve("src/templates/blogList.js")
   const res = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___data], order: DESC }
+        limit: 100
+      ) {
         edges {
           node {
             fields {
@@ -62,6 +66,21 @@ module.exports.createPages = async ({ graphql, actions }) => {
           tag: `${tag}`,
         },
       })
+    })
+  })
+
+  const postsPerPage = 2
+  const numPages = Math.ceil(posts.length / postsPerPage)
+  Array.from({ length: numPages }).forEach((_, index) => {
+    createPage({
+      path: index === 0 ? `/blog` : `/blog/${index + 1}`,
+      component: blogListTemplate,
+      context: {
+        limit: postsPerPage,
+        skip: index * postsPerPage,
+        numPages,
+        currentPage: index + 1,
+      },
     })
   })
 }
