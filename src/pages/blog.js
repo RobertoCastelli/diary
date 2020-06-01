@@ -58,14 +58,16 @@ const Blog = () => {
                 <p>{edge.node.timeToRead} min read</p>
                 <h2>{edge.node.frontmatter.title}</h2>
                 <p>{edge.node.frontmatter.intro}</p>
-                <ul className={blogStyle.tagList}>
-                  {edge.node.frontmatter.tags.map(tag => (
+              </Link>
+              <ul className={blogStyle.tagList}>
+                {edge.node.frontmatter.tags.map(tag => (
+                  <Link to={`tags/${tag}`}>
                     <li key={tag} className={blogStyle.tagItem}>
                       {tag}
                     </li>
-                  ))}
-                </ul>
-              </Link>
+                  </Link>
+                ))}
+              </ul>
             </li>
           )
         })}

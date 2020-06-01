@@ -3,9 +3,9 @@ const path = require("path")
 module.exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === "MarkdownRemark") {
-    // Create slug from Node Js basename
+    // Create slug from Node JS basename
     const slug = path.basename(node.fileAbsolutePath, ".md")
-    // Create field --> Get slug
+    // Create node field --> Assign slug
     createNodeField({
       node,
       name: "slug",
@@ -14,10 +14,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
-// 1. Get path to template
-// 2. Get markdown data
-// 3. Create new pages
-
+// Query slug $ tags
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const blogTemplate = path.resolve("src/templates/blog.js")
@@ -40,6 +37,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
   `)
   const posts = res.data.allMarkdownRemark.edges
 
+  // 1. Create blog page
+  // 2. Give Path to page
+  // 3. Give Context to variable based on slug
   posts.forEach(edge => {
     createPage({
       component: blogTemplate,
@@ -50,11 +50,18 @@ module.exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  createPage({
-    component: tagTemplate,
-    path: `/tag`,
-    context: {
-      tag: "javascript",
-    },
+  // 1. Create tags filtered page
+  // 2. Give Path to page
+  // 3. Give Context to variable based on tag
+  posts.forEach(edge => {
+    edge.node.frontmatter.tags.forEach(tag => {
+      createPage({
+        component: tagTemplate,
+        path: `/tags/${tag}`,
+        context: {
+          tag: `${tag}`,
+        },
+      })
+    })
   })
 }
